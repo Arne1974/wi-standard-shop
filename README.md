@@ -1,4 +1,4 @@
-# Shop Branch
+# Wizard Shop Standard (Shop Branch)
 
 Hinzufügen/Entfernen und Versionupdate von Abhänigkeiten (dependencies), sowie Änderungen an Dateien.
 

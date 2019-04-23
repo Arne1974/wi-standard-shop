@@ -18,7 +18,7 @@ Zum <b>Starten und Bearbeiten</b> eines Shop muss auf entsprechenden Branch gewe
     git checkout <mandant>
     git merge shop
 
-<b>Änderungen an einem Auftritt eines Mandanten werden nur auf Branch `MandantÂ´ durchgeführt</b>, commitet und ge-pusht! Ggf. können einzelne Commits, die auf dem Mandant-Branch gemacht und dem Shop gelten, per cherry-pick von Mandant-Branch auf Shop-Branch geholt werden. Es wäre ratsam solche Commits klein zu halten, damit sich diese für solche Fälle nahtlos integrieren lassen.
+<b>Änderungen an einem Auftritt eines Mandanten werden nur auf Branch `Mandant´ durchgeführt</b>, commitet und ge-pusht! Ggf. können einzelne Commits, die auf dem Mandant-Branch gemacht und dem Shop gelten, per cherry-pick (https://git-scm.com/docs/git-cherry-pick) von Mandant-Branch auf Shop-Branch geholt werden. Es wäre ratsam solche Commits klein zu halten, damit sich diese für solche Fälle nahtlos integrieren lassen.
 
 Erzeugen eines <b>neuen Mandant-Branch</b>, erfolgt immer als Kopie des aktuellen Shop-Branches.
 
@@ -27,7 +27,12 @@ Erzeugen eines <b>neuen Mandant-Branch</b>, erfolgt immer als Kopie des aktuelle
     git checkout <neuer-mandant>
 
 
-# Git commands
+# Git commands - [Dokumentation und Referenz](https://git-scm.com/docs/git)
+
+Fetch/Pull: Auto-Merge durchführen (VI-commands: Esc, :, wq)
+
+    git pull
+
 Alle Branches anzeigen:
 
     git branch -a

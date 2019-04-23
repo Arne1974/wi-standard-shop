@@ -1,8 +1,6 @@
-# Wizard Shop Standard (Shop Branch)
+# Wizard Shop Standard (Dev Branch)
 
-Hinzufügen/Entfernen und Versionupdate von Abhänigkeiten (dependencies), sowie Änderungen an Dateien.
-
-Nur Änderungen, die Funktionsweise des Shop betreffen!
+Development Branch
 
 # Vorgehensweise 
 Grundsätzlich gilt, nur mit <b>Branches</b> arbeiten! Der Master-Branch kann dabei unangetastet bleiben. 

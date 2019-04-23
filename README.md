@@ -1,6 +1,8 @@
 # Wizard Shop Standard (wizard-shop-standard)
 
-## Vorgehensweise 
+Master Branch
+
+# Vorgehensweise 
 Grundsätzlich gilt, nur mit <b>Branches</b> arbeiten! Der Master-Branch kann dabei unangetastet bleiben. 
 
     |
@@ -25,7 +27,7 @@ Erzeugen eines <b>neuen Mandant-Branch</b>, erfolgt immer als Kopie des aktuelle
     git checkout <neuer-mandant>
 
 
-## Commands
+# Git commands
 Alle Branches anzeigen:
 
     git branch -a

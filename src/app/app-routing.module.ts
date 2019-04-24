@@ -7,8 +7,9 @@ import DataProtectionModule from './data-protection/data-protection.module';
 import ImprintModule from './imprint/imprint.module';
 import DeliverModule from './deliver/deliver.module';
 import ReturnModule from './return/return.module';
+import CategoryModule from './category/category.module';
 import CategoriesModule from './categories/categories.module';
-// import { CategoryComponent } from './category/category.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', loadChildren: () => HomeModule },
@@ -18,8 +19,10 @@ const routes: Routes = [
   { path: 'imprint', loadChildren: () => ImprintModule },
   { path: 'deliver', loadChildren: () => DeliverModule },
   { path: 'return', loadChildren: () => ReturnModule },
-  { path: 'category', loadChildren: () => CategoriesModule },
+  { path: 'category', loadChildren: () => CategoryModule },
   { path: 'categories', loadChildren: () => CategoriesModule },
+  { path: '**', redirectTo: '/page-not-found', pathMatch: 'full' },
+  { path: 'page-not-found', component: PageNotFoundComponent },
 ];
 
 @NgModule({

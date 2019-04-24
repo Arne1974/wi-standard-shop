@@ -1,7 +1,2 @@
-<nav>
-  <a *ngFor="let nav of navigation"
-    [routerLink]="nav.url" 
-    routerLinkActive="active" 
-    [routerLinkActiveOptions]="{exact:true}">{{nav.context}}</a>
-</nav>
+<app-navbar></app-navbar>
 <router-outlet></router-outlet>

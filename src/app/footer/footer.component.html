@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      Left column
+    </div>
+    <div class="col-6">
+      <ul class="list-group list-group-flush">
+        <li *ngFor="let nav of footerNavigation" class="list-group-item">
+          <a [routerLink]="nav.url" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">{{nav.context}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col">
+      Right column
+    </div>
+  </div>
+</div>

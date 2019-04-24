@@ -7,7 +7,7 @@
 
   <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
     <ul class="navbar-nav mr-auto">
-      <li *ngFor="let nav of navigation" class="nav-item">
+      <li *ngFor="let nav of headerNavigation" class="nav-item">
         <a [routerLink]="nav.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
           class="nav-link">{{nav.context}}</a>
       </li>

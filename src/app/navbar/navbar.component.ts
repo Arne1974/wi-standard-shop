@@ -11,15 +11,8 @@ export class NavbarComponent implements OnInit {
 
   isNavbarCollapsed = true;
   title = 'wizard-shop-standard';
-  navigation = [
+  headerNavigation = [
     { url: '', context: 'Home' },
-    { url: 'contact', context: 'Kontakt' },
-    { url: 'terms', context: 'AGB' },
-    { url: 'data-protection', context: 'Datenschutz' },
-    { url: 'imprint', context: 'Impressum' },
-    { url: 'deliver', context: 'Versandbedingungen' },
-    { url: 'return', context: 'Rückgabebedingungen' },
-    { url: 'category/id/1', context: 'Kategorie' },
     { url: 'categories', context: 'Kategorien' },
   ];
 

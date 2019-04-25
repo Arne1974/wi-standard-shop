@@ -1,3 +1,25 @@
 <app-navbar></app-navbar>
-<router-outlet></router-outlet>
+<router-outlet>
+  <div>
+    <button (click)="useLanguage('en')">en</button>
+    <button (click)="useLanguage('de')">de</button>
+    <!-- translation: translation pipe -->
+    <h1>{{ 'demo.title' | translate }}</h1>
+
+    <!-- translation: directive (key as attribute)-->
+    <p [translate]="'demo.text'"></p>
+
+    <!-- translation: directive (key as content of element) -->
+    <p translate>demo.text</p>
+
+    <!-- translation: translation pipe -->
+    <p>{{ 'demo.greeting' | translate:{'name':'Andreas'} }}</p>
+
+    <!-- translation: directive (key as attribute) -->
+    <p [translate]="'demo.greeting'" [translateParams]="{name: 'Andreas'}"></p>
+
+    <!-- translation: directive (key as content of element)-->
+    <p translate [translateParams]="{name: 'Andreas'}">demo.greeting</p>
+  </div>
+</router-outlet>
 <app-footer></app-footer>

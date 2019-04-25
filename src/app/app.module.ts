@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { TranslateService } from '@ngx-translate/core';
 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -36,7 +37,12 @@ import { FooterComponent } from './footer/footer.component';
         }
     })
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'translate',
+      useClass: TranslateService
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

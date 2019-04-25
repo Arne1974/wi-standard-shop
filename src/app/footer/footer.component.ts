@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { _ } from '@biesbjerg/ngx-translate-extract/dist/utils/utils';
 
 @Component({
   selector: 'app-footer',
@@ -18,6 +19,7 @@ export class FooterComponent implements OnInit {
     { url: 'return', context: 'Rückgabebedingungen' },
     { url: 'categories', context: 'Kategorien' },
   ];
+  messageBoxContent = _('messagebox.success.text');
   ngOnInit() {
   }
 

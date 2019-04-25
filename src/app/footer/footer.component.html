@@ -1,9 +1,10 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col">
-      Left column
+      {{'footer.left_column' | translate}}
     </div>
     <div class="col-6">
+      <div>{{ messageBoxContent | translate }}</div>
       <ul class="list-group list-group-flush">
         <li *ngFor="let nav of footerNavigation" class="list-group-item">
           <a [routerLink]="nav.url" routerLinkActive="active"
@@ -12,7 +13,7 @@
       </ul>
     </div>
     <div class="col">
-      Right column
+      {{'footer.right_column' | translate}}
     </div>
   </div>
 </div>

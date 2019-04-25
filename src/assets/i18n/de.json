@@ -1,12 +1,19 @@
 {
-  "demo": {
-    "title": "Übersetzungs-Demo",
-    "text": "﻿Dies ist eine einfache Applikation um die Funktionen von ngx-transalte zu demonstrieren.",
-    "greeting": "Hallo {{name}}!"
-  },
-  "messagebox": {
-      "warning": {
-          "text": "Warnung!"
-      }
-  }
+	"demo": {
+		"greeting": "Hallo {{name}}!",
+		"text": "﻿Dies ist eine einfache Applikation um die Funktionen von ngx-transalte zu demonstrieren.",
+		"title": "Übersetzungs-Demo"
+	},
+	"messagebox": {
+		"warning": {
+			"text": "Warnung!"
+        },
+        "success": {
+            "text": "Erfolg!"
+        }
+	},
+    "footer": {
+        "left_column": "Linke Spalte",
+        "right_column": "Rechte Spalte"
+    }
 }

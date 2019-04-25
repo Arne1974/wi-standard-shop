@@ -15,5 +15,8 @@
     "footer": {
         "left_column": "Left column",
         "right_column": "Right column"
+    },
+    "page-not-found": {
+        "works": "works"
     }
 }

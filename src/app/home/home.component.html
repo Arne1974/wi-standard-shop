@@ -1,3 +1,22 @@
 <p>
   home works!
 </p>
+<div>
+  <!-- translation: translation pipe -->
+  <h1>{{ 'demo.title' | translate }}</h1>
+
+  <!-- translation: directive (key as attribute)-->
+  <p [translate]="'demo.text'"></p>
+
+  <!-- translation: directive (key as content of element) -->
+  <p translate>demo.text</p>
+
+  <!-- translation: translation pipe -->
+  <p>{{ 'demo.greeting' | translate:{'name':'Andreas'} }}</p>
+
+  <!-- translation: directive (key as attribute) -->
+  <p [translate]="'demo.greeting'" [translateParams]="{name: 'Andreas'}"></p>
+
+  <!-- translation: directive (key as content of element)-->
+  <p translate [translateParams]="{name: 'Andreas'}">demo.greeting</p>
+</div>

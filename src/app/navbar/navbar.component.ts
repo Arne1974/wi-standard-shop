@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { _ } from '@biesbjerg/ngx-translate-extract/dist/utils/utils';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    @Inject('translate') private translate
+  ) {
+    translate.addLangs(['en', 'de']);
+    translate.setDefaultLang('en');
+   }
 
   isNavbarCollapsed = true;
   title = 'wizard-shop-standard';
@@ -15,8 +21,12 @@ export class NavbarComponent implements OnInit {
     { url: '', context: 'Home' },
     { url: 'categories', context: 'Kategorien' },
   ];
+  messageBoxContent = _('messagebox.warning.text');
 
   ngOnInit() {
   }
-
+  useLanguage(language: string) {
+    const browserLang = this.translate.getBrowserLang();
+    this.translate.use(browserLang.match(/en|de/) ? language : 'en');
+  }
 }

@@ -11,8 +11,10 @@
         <a [routerLink]="nav.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
           class="nav-link">{{nav.context}}</a>
       </li>
-      
     </ul>
-
+    <span class="navbar-text mr-2">
+      <button (click)="useLanguage('en')">en</button>
+      <button (click)="useLanguage('de')">de</button>
+    </span>
   </div>
 </nav>

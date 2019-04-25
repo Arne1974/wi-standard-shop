@@ -15,5 +15,8 @@
     "footer": {
         "left_column": "Linke Spalte",
         "right_column": "Rechte Spalte"
+    },
+    "page-not-found": {
+        "works": "funktioniert"
     }
 }

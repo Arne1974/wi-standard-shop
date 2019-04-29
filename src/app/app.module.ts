@@ -14,6 +14,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { CategoriesService } from './categories/categories.service';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,10 @@ import { FooterComponent } from './footer/footer.component';
     {
       provide: 'translate',
       useClass: TranslateService
+    },
+    {
+      provide: 'categories-service',
+      useClass: CategoriesService
     }
   ],
   bootstrap: [AppComponent]

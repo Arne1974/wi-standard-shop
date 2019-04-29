@@ -1,5 +1,4 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-categories',
@@ -13,6 +12,6 @@ export class CategoriesComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.categories$ = this.categoriesService.fetchCategories();
+    this.categories$ = this.categoriesService.getCategories();
   }
 }

@@ -7,9 +7,10 @@ import { _ } from '@biesbjerg/ngx-translate-extract/dist/utils/utils';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
+  categories$;
   constructor(
-    @Inject('translate') private translate
+    @Inject('translate') private translate,
+    @Inject('categories-service') private categoriesService
   ) {
     translate.addLangs(['en', 'de']);
     translate.setDefaultLang('en');
@@ -21,9 +22,9 @@ export class NavbarComponent implements OnInit {
     { url: '', context: 'Home' },
     { url: 'categories', context: 'Kategorien' },
   ];
-  messageBoxContent = _('messagebox.warning.text');
 
   ngOnInit() {
+    this.categories$ = this.categoriesService.getCategories();
   }
   useLanguage(language: string) {
     const browserLang = this.translate.getBrowserLang();

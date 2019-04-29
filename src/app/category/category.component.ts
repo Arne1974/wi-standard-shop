@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
 import { switchMap } from 'rxjs/operators';
 
 @Component({
@@ -9,15 +8,16 @@ import { switchMap } from 'rxjs/operators';
   styleUrls: ['./category.component.scss']
 })
 export class CategoryComponent implements OnInit {
-
-  private id;
-  constructor(private route: ActivatedRoute) {}
+  catId: string;
+  constructor(
+    private route: ActivatedRoute,
+    @Inject('categories-service') private categoriesService
+  ) {}
 
   ngOnInit() {
-    this.id = this.route
-      .paramMap
-      .pipe(switchMap(params => params.get('id') || 'None'));
-
+    this.catId = this.getCategory();
   }
-
+  getCategory(): string {
+    return this.route.snapshot.paramMap.get('id') || 'None';
+  }
 }

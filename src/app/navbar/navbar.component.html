@@ -7,10 +7,22 @@
 
   <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
     <ul class="navbar-nav mr-auto">
-      <li *ngFor="let nav of headerNavigation" class="nav-item">
-        <a [routerLink]="nav.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
-          class="nav-link">{{nav.context}}</a>
-      </li>
+      <ng-template ngFor let-nav [ngForOf]="headerNavigation">
+        <li *ngIf="(nav.url !== 'categories')" class="nav-item">
+          <a [routerLink]="nav.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+            class="nav-link">{{nav.context}}</a>
+        </li>
+        <li *ngIf="(nav.url === 'categories')" class="nav-item" ngbDropdown>
+          <a [routerLink]="nav.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+            class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button" ngbDropdownToggle>
+            {{nav.context}}
+          </a>
+          <div ngbDropdownMenu aria-labelledby="navbarDropdownCategories">
+            <a ngbDropdownItem *ngFor="let category of categories$ | async"
+            routerLink="/category/id/{{category}}" href="#">{{category}}</a>
+          </div>
+        </li>
+      </ng-template>
     </ul>
     <span class="navbar-text mr-2">
       <button (click)="useLanguage('en')">en</button>

@@ -10,16 +10,16 @@ export class FooterComponent implements OnInit {
 
   constructor() { }
   footerNavigation = [
-    { url: '', context: 'Home' },
-    { url: 'contact', context: 'Kontakt' },
-    { url: 'terms', context: 'AGB' },
-    { url: 'data-protection', context: 'Datenschutz' },
-    { url: 'imprint', context: 'Impressum' },
-    { url: 'deliver', context: 'Versandbedingungen' },
-    { url: 'return', context: 'Rückgabebedingungen' },
-    { url: 'categories', context: 'Kategorien' },
+    { url: '', translation: _('footer.navigation.home') },
+    { url: 'contact', translation: _('footer.navigation.contact') },
+    { url: 'terms', translation: _('footer.navigation.terms') },
+    { url: 'data-protection', translation: _('footer.navigation.data-protection') },
+    { url: 'imprint', translation: _('footer.navigation.imprint') },
+    { url: 'deliver', translation: _('footer.navigation.deliver') },
+    { url: 'return', translation: _('footer.navigation.return') },
+    { url: 'categories', translation: _('footer.navigation.categories') },
   ];
-  messageBoxContent = _('messagebox.success.text');
+
   ngOnInit() {
   }
 

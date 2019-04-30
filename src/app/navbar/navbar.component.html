@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">wizard-shop-standard</a>
+  <a class="navbar-brand" href="/">wizard-shop-standard</a>
   <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed"
     data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -10,16 +10,16 @@
       <ng-template ngFor let-nav [ngForOf]="headerNavigation">
         <li *ngIf="(nav.url !== 'categories')" class="nav-item">
           <a [routerLink]="nav.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
-            class="nav-link">{{nav.context}}</a>
+            class="nav-link">{{nav.translation | translate}}</a>
         </li>
         <li *ngIf="(nav.url === 'categories')" class="nav-item" ngbDropdown>
           <a [routerLink]="nav.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
             class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button" ngbDropdownToggle>
-            {{nav.context}}
+            {{nav.translation | translate}}
           </a>
           <div ngbDropdownMenu aria-labelledby="navbarDropdownCategories">
-            <a ngbDropdownItem *ngFor="let category of categories$ | async"
-            routerLink="/category/id/{{category}}" href="#">{{category}}</a>
+            <a ngbDropdownItem *ngFor="let category of categories$ | async" routerLink="/category/id/{{category.cat_id}}"
+              href="#">{{category.translation | translate}}</a>
           </div>
         </li>
       </ng-template>

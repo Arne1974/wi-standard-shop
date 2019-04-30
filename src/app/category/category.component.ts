@@ -8,14 +8,14 @@ import { switchMap } from 'rxjs/operators';
   styleUrls: ['./category.component.scss']
 })
 export class CategoryComponent implements OnInit {
-  catId: string;
+  headline: string;
   constructor(
     private route: ActivatedRoute,
     @Inject('categories-service') private categoriesService
   ) {}
 
   ngOnInit() {
-    this.catId = this.getCategory();
+    this.headline = 'categories.' + this.getCategory();
   }
   getCategory(): string {
     return this.route.snapshot.paramMap.get('id') || 'None';

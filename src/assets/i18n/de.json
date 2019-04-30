@@ -14,9 +14,39 @@
 	},
     "footer": {
         "left_column": "Linke Spalte",
-        "right_column": "Rechte Spalte"
+        "right_column": "Rechte Spalte",
+        "navigation": {
+            "home": "Startseite",
+            "contact": "Kontakt",
+            "terms": "AGB",
+            "data-protection": "Datenschutz",
+            "imprint": "Impressum",
+            "deliver": "Versandbedingungen",
+            "return": "Rückgabebedingungen",
+            "categories": "Kategorien"
+        }
     },
     "page-not-found": {
         "works": "funktioniert"
+    },
+    "navigation": {
+        "home": "Startseite",
+        "categories": "Kategorien"
+    },
+    "categories": {
+        "context": "Kategorien",
+        "spielzeug": "Spielzeug",
+        "drachenzähmen - die insel": "Drachenzähmen - Die Insel",
+        "heide park": "Heide Park",
+        "tassen & co.": "Tassen & Co.",
+        "scream": "Scream",
+        "krake": "Krake",
+        "alle produkte": "Alle Produkte",
+        "ghostbusters 5d": "Ghostbusters 5D",
+        "textil": "Textil",
+        "flug der dämonen": "Flug der Dämonen",
+        "plüsch": "Plüsch",
+        "drachenzähmen": "Drachenzähmen",
+        "angebot des monats": "Angebot des Monats"
     }
 }

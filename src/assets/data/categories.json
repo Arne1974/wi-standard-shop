@@ -1,15 +1,80 @@
 [
-    "spielzeug",
-    "drachenzähmen - die insel",
-    "heide park",
-    "tassen & co.",
-    "scream",
-    "krake",
-    "alle produkte",
-    "ghostbusters 5d",
-    "textil",
-    "flug der dämonen",
-    "plüsch",
-    "drachenzähmen",
-    "angebot des monats"
+  {
+    "cat_id": "spielzeug",
+    "sort_id": 1,
+    "context": "Spielzeug",
+    "translation": "categories.spielzeug"
+  },
+  {
+    "cat_id": "drachenzähmen - die insel",
+    "sort_id": 12,
+    "context": "Drachenzähmen - Die Insel",
+    "translation": "categories.drachenzähmen - die insel"
+  },
+  {
+    "cat_id": "heide park",
+    "sort_id": 3,
+    "context": "Heide Park",
+    "translation": "categories.heide park"
+  },
+  {
+    "cat_id": "tassen & co.",
+    "sort_id": 4,
+    "context": "Tassen & Co.",
+    "translation": "categories.tassen & co."
+  },
+  {
+    "cat_id": "scream",
+    "sort_id": 5,
+    "context": "Scream",
+    "translation": "categories.scream"
+  },
+  {
+    "cat_id": "krake",
+    "sort_id": 16,
+    "context": "Krake",
+    "translation": "categories.krake"
+  },
+  {
+    "cat_id": "alle produkte",
+    "sort_id": 6,
+    "context": "Alle Produkte",
+    "translation": "categories.alle produkte"
+  },
+  {
+    "cat_id": "ghostbusters 5d",
+    "sort_id": 7,
+    "context": "Ghostbusters 5D",
+    "translation": "categories.ghostbusters 5d"
+  },
+  {
+    "cat_id": "textil",
+    "sort_id": 18,
+    "context": "Textil",
+    "translation": "categories.textil"
+  },
+  {
+    "cat_id": "flug der dämonen",
+    "sort_id": 20,
+    "context": "Flug der Dämonen",
+    "translation": "categories.flug der dämonen"
+  },
+  {
+    "cat_id": "plüsch",
+    "sort_id": 25,
+    "context": "Plüsch",
+    "translation": "categories.plüsch"
+  },
+  {
+    "cat_id": "drachenzähmen",
+    "sort_id": 2,
+    "context": "Drachenzähmen",
+    "translation": "categories.drachenzähmen"
+  },
+  {
+    "cat_id": "angebot des monats",
+    "sort_id": 27,
+    "context": "Angebot des Monats",
+    "translation": "categories.angebot des monats"
+  }
 ]

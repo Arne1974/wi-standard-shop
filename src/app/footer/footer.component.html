@@ -4,11 +4,10 @@
       {{'footer.left_column' | translate}}
     </div>
     <div class="col-6">
-      <div>{{ messageBoxContent | translate }}</div>
       <ul class="list-group list-group-flush">
         <li *ngFor="let nav of footerNavigation" class="list-group-item">
           <a [routerLink]="nav.url" routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact:true}">{{nav.context}}</a>
+            [routerLinkActiveOptions]="{exact:true}">{{nav.translation | translate}}</a>
         </li>
       </ul>
     </div>

@@ -8,19 +8,20 @@ import { _ } from '@biesbjerg/ngx-translate-extract/dist/utils/utils';
 })
 export class NavbarComponent implements OnInit {
   categories$;
+  defaultLang = 'de';
   constructor(
     @Inject('translate') private translate,
     @Inject('categories-service') private categoriesService
   ) {
     translate.addLangs(['en', 'de']);
-    translate.setDefaultLang('en');
-   }
+    translate.setDefaultLang(this.defaultLang);
+  }
 
   isNavbarCollapsed = true;
   title = 'wizard-shop-standard';
   headerNavigation = [
-    { url: '', context: 'Home' },
-    { url: 'categories', context: 'Kategorien' },
+    { url: '', context: 'Home', translation: _('navigation.home') },
+    { url: 'categories', context: 'Kategorien', translation: _('navigation.categories') },
   ];
 
   ngOnInit() {
@@ -28,6 +29,6 @@ export class NavbarComponent implements OnInit {
   }
   useLanguage(language: string) {
     const browserLang = this.translate.getBrowserLang();
-    this.translate.use(browserLang.match(/en|de/) ? language : 'en');
+    this.translate.use(browserLang.match(/en|de/) ? language : this.defaultLang);
   }
 }

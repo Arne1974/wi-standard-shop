@@ -1,7 +1,4 @@
-<main>
-  <h1>{{'categories.context' | translate}}</h1>
-  <ul>
-    <li *ngFor="let category of categories$ | async">{{ category.translation | translate}}</li>
-  </ul>
-
-</main>
+<h1>{{'categories.headline' | translate}}</h1>
+<ul>
+  <li *ngFor="let category of categories$ | async">{{ category.translation | translate}}</li>
+</ul>

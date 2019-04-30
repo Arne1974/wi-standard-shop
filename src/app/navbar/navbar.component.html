@@ -18,7 +18,7 @@
             {{nav.translation | translate}}
           </a>
           <div ngbDropdownMenu aria-labelledby="navbarDropdownCategories">
-            <a ngbDropdownItem *ngFor="let category of categories$ | async" routerLink="/category/id/{{category.cat_id}}"
+            <a ngbDropdownItem *ngFor="let category of categories$ | async" routerLink="/category/id/{{category.id}}"
               href="#">{{category.translation | translate}}</a>
           </div>
         </li>

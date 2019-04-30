@@ -1,80 +1,54 @@
 [
   {
-    "cat_id": "spielzeug",
-    "sort_id": 1,
-    "context": "Spielzeug",
+    "id": "spielzeug",
     "translation": "categories.spielzeug"
   },
   {
-    "cat_id": "drachenzähmen - die insel",
-    "sort_id": 12,
-    "context": "Drachenzähmen - Die Insel",
+    "id": "drachenzähmen - die insel",
     "translation": "categories.drachenzähmen - die insel"
   },
   {
-    "cat_id": "heide park",
-    "sort_id": 3,
-    "context": "Heide Park",
+    "id": "heide park",
     "translation": "categories.heide park"
   },
   {
-    "cat_id": "tassen & co.",
-    "sort_id": 4,
-    "context": "Tassen & Co.",
+    "id": "tassen & co.",
     "translation": "categories.tassen & co."
   },
   {
-    "cat_id": "scream",
-    "sort_id": 5,
-    "context": "Scream",
+    "id": "scream",
     "translation": "categories.scream"
   },
   {
-    "cat_id": "krake",
-    "sort_id": 16,
-    "context": "Krake",
+    "id": "krake",
     "translation": "categories.krake"
   },
   {
-    "cat_id": "alle produkte",
-    "sort_id": 6,
-    "context": "Alle Produkte",
+    "id": "alle produkte",
     "translation": "categories.alle produkte"
   },
   {
-    "cat_id": "ghostbusters 5d",
-    "sort_id": 7,
-    "context": "Ghostbusters 5D",
+    "id": "ghostbusters 5d",
     "translation": "categories.ghostbusters 5d"
   },
   {
-    "cat_id": "textil",
-    "sort_id": 18,
-    "context": "Textil",
+    "id": "textil",
     "translation": "categories.textil"
   },
   {
-    "cat_id": "flug der dämonen",
-    "sort_id": 20,
-    "context": "Flug der Dämonen",
+    "id": "flug der dämonen",
     "translation": "categories.flug der dämonen"
   },
   {
-    "cat_id": "plüsch",
-    "sort_id": 25,
-    "context": "Plüsch",
+    "id": "plüsch",
     "translation": "categories.plüsch"
   },
   {
-    "cat_id": "drachenzähmen",
-    "sort_id": 2,
-    "context": "Drachenzähmen",
+    "id": "drachenzähmen",
     "translation": "categories.drachenzähmen"
   },
   {
-    "cat_id": "angebot des monats",
-    "sort_id": 27,
-    "context": "Angebot des Monats",
+    "id": "angebot des monats",
     "translation": "categories.angebot des monats"
   }
 ]

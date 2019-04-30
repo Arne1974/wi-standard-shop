@@ -20,8 +20,8 @@ export class NavbarComponent implements OnInit {
   isNavbarCollapsed = true;
   title = 'wizard-shop-standard';
   headerNavigation = [
-    { url: '', context: 'Home', translation: _('navigation.home') },
-    { url: 'categories', context: 'Kategorien', translation: _('navigation.categories') },
+    { url: '', translation: _('navigation.home') },
+    { url: 'categories', translation: _('navigation.categories') },
   ];
 
   ngOnInit() {

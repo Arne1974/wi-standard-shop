@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import HomeModule from './home/home.module';
 import ContactModule from './contact/contact.module';
 import TermsModule from './terms/terms.module';
@@ -9,7 +10,7 @@ import DeliverModule from './deliver/deliver.module';
 import ReturnModule from './return/return.module';
 import CategoryModule from './category/category.module';
 import CategoriesModule from './categories/categories.module';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import CartModule from './cart/cart.module';
 
 const routes: Routes = [
   { path: '', loadChildren: () => HomeModule },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'return', loadChildren: () => ReturnModule },
   { path: 'category', loadChildren: () => CategoryModule },
   { path: 'categories', loadChildren: () => CategoriesModule },
+  { path: 'cart', loadChildren: () => CartModule },
   { path: '**', redirectTo: '/page-not-found', pathMatch: 'full' },
   { path: 'page-not-found', component: PageNotFoundComponent },
 ];

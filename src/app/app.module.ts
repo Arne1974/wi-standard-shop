@@ -16,6 +16,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CategoriesService } from './categories/categories.service';
+import { CartService } from './cart/cart.service';
 
 @NgModule({
   declarations: [
@@ -34,9 +35,9 @@ import { CategoriesService } from './categories/categories.service';
     HttpClientModule,
     TranslateModule.forRoot({
         loader: {
-            provide: TranslateLoader,
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
         }
     })
   ],
@@ -48,6 +49,10 @@ import { CategoriesService } from './categories/categories.service';
     {
       provide: 'categories-service',
       useClass: CategoriesService
+    },
+    {
+      provide: 'cart-service',
+      useClass: CartService
     }
   ],
   bootstrap: [AppComponent]

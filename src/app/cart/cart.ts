@@ -1,3 +1,3 @@
 export class Cart {
-    items: object;
+    items: any;
 }

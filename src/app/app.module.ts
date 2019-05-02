@@ -15,6 +15,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+
 import { CategoriesService } from './categories/categories.service';
 import { CartService } from './cart/cart.service';
 

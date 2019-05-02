@@ -5,7 +5,9 @@ import { Cart } from './cart';
   providedIn: 'root'
 })
 export class CartService {
-
+  cart;
   constructor() { }
-
+  getCart() {
+    return this.cart;
+  }
 }

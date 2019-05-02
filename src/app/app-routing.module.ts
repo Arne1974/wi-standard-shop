@@ -11,6 +11,7 @@ import ReturnModule from './return/return.module';
 import CategoryModule from './category/category.module';
 import CategoriesModule from './categories/categories.module';
 import CartModule from './cart/cart.module';
+import ArticleModule from './article/article.module';
 
 const routes: Routes = [
   { path: '', loadChildren: () => HomeModule },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'category', loadChildren: () => CategoryModule },
   { path: 'categories', loadChildren: () => CategoriesModule },
   { path: 'cart', loadChildren: () => CartModule },
+  { path: 'article', loadChildren: () => ArticleModule },
   { path: '**', redirectTo: '/page-not-found', pathMatch: 'full' },
   { path: 'page-not-found', component: PageNotFoundComponent },
 ];

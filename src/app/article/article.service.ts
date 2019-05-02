@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Cart } from './cart';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CartService {
-  cart;
+export class ArticleService {
+  getArticleUrl = 'https://athene.wizard.gmbh/api/v2/details/article/generic';
+
   constructor(
     private http: HttpClient
   ) { }
-  getCart() {
-    return this.cart;
+  getArticleByArticleId(id: string) {
+    return;
   }
 }

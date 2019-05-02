@@ -19,6 +19,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { CategoriesService } from './categories/categories.service';
 import { CartService } from './cart/cart.service';
 import { ArticleService } from './article/article.service';
+import { ProfileService } from './profile/profile.service';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,10 @@ import { ArticleService } from './article/article.service';
     {
       provide: 'article-service',
       useClass: ArticleService
+    },
+    {
+      provide: 'profile-service',
+      useClass: ProfileService
     }
   ],
   bootstrap: [AppComponent]

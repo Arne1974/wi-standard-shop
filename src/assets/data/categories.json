@@ -1,54 +1,18 @@
 [
-  {
-    "id": "spielzeug",
-    "translation": "categories.spielzeug"
-  },
+  { "id": "spielzeug", "translation": "categories.spielzeug" },
   {
     "id": "drachenzähmen - die insel",
     "translation": "categories.drachenzähmen - die insel"
   },
-  {
-    "id": "heide park",
-    "translation": "categories.heide park"
-  },
-  {
-    "id": "tassen & co.",
-    "translation": "categories.tassen & co."
-  },
-  {
-    "id": "scream",
-    "translation": "categories.scream"
-  },
-  {
-    "id": "krake",
-    "translation": "categories.krake"
-  },
-  {
-    "id": "alle produkte",
-    "translation": "categories.alle produkte"
-  },
-  {
-    "id": "ghostbusters 5d",
-    "translation": "categories.ghostbusters 5d"
-  },
-  {
-    "id": "textil",
-    "translation": "categories.textil"
-  },
-  {
-    "id": "flug der dämonen",
-    "translation": "categories.flug der dämonen"
-  },
-  {
-    "id": "plüsch",
-    "translation": "categories.plüsch"
-  },
-  {
-    "id": "drachenzähmen",
-    "translation": "categories.drachenzähmen"
-  },
-  {
-    "id": "angebot des monats",
-    "translation": "categories.angebot des monats"
-  }
+  { "id": "heide park", "translation": "categories.heide park" },
+  { "id": "tassen & co.", "translation": "categories.tassen & co." },
+  { "id": "scream", "translation": "categories.scream" },
+  { "id": "krake", "translation": "categories.krake" },
+  { "id": "alle produkte", "translation": "categories.alle produkte" },
+  { "id": "ghostbusters 5d", "translation": "categories.ghostbusters 5d" },
+  { "id": "textil", "translation": "categories.textil" },
+  { "id": "flug der dämonen", "translation": "categories.flug der dämonen" },
+  { "id": "plüsch", "translation": "categories.plüsch" },
+  { "id": "drachenzähmen", "translation": "categories.drachenzähmen" },
+  { "id": "angebot des monats", "translation": "categories.angebot des monats" }
 ]

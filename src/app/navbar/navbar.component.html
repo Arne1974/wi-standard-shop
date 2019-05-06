@@ -14,7 +14,7 @@
         </li>
         <li *ngIf="(nav.url === 'categories')" class="nav-item" ngbDropdown>
           <a [routerLink]="nav.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
-            class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button" ngbDropdownToggle>
+            class="nav-link dropdown-toggle" id="navbarDropdownCategories" role="button" ngbDropdownToggle>
             {{nav.translation | translate}}
           </a>
           <div ngbDropdownMenu aria-labelledby="navbarDropdownCategories">

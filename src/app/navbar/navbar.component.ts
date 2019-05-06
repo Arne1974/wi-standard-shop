@@ -9,6 +9,7 @@ import { _ } from '@biesbjerg/ngx-translate-extract/dist/utils/utils';
 export class NavbarComponent implements OnInit {
   categories$;
   defaultLang = 'de';
+
   constructor(
     @Inject('translate') private translate,
     @Inject('categories-service') private categoriesService
